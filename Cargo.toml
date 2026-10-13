@@ -1,0 +1,15 @@
+[package]
+name = "mbox2pst"
+version = "1.0.0"
+edition = "2021"
+description = "Convert a Thunderbird mail directory (mbox files) into an Outlook Unicode PST file"
+license = "MIT"
+
+[dependencies]
+mailparse = "0.15"
+encoding_rs = "0.8"
+unicode-normalization = "0.1"
+
+[profile.release]
+opt-level = 3
+lto = true
